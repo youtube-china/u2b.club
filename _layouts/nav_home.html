@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html class="no-js" lang="zh-CN">
-{% include head.html %}
+{% include _head.html %}
 
 <body class="home blog">
-    {% include header.html %}
+    {% include _header.html %}
     <main class="main-content">
-        {% include nav.html %}
+        {% include _navbar.html %}
         <div id="content" class="content-wrapper">
             <div class="container-fluid container-no-gutters">
                 <div class="jumbotron mt-3 text-center alert fade show" role="alert">
@@ -25,17 +25,7 @@
                     <div class="card-body">
                         <div class="row">
                             {% for item in site.data.features %}
-                            <div class="col-6 col-md-43 col-lg-3"><a href="https://www.youtube.com/channel/{{ item.channel }}"
-                                    rel="noopener nofollow" title="{{ item.name }}" target="_blank">{{ item.name }}</a>
-                                <p class="card-text">{{ item.description }}</p>
-                                <p class="card-meta">
-                                    {% if item.subscripters %}
-                                    <span><i class="ion ion-ios-notifications"></i> {{ item.subscripters }} 个订阅</span>
-                                    {% else %}
-                                    <span><i class="ion ion-ios-notifications"></i> 不公开订阅</span>
-                                    {% endif %}
-                                </p>
-                            </div>
+                            {% include _card.html param="item" variable-param=item %}
                             {% endfor %}
                         </div>
                     </div>
@@ -48,17 +38,7 @@
                     <div class="card-body">
                         <div class="row">
                             {% for item in site.data.vlogs %}
-                            <div class="col-6 col-md-43 col-lg-3"><a href="https://www.youtube.com/channel/{{ item.channel }}"
-                                    rel="noopener nofollow" title="{{ item.name }}" target="_blank">{{ item.name }}</a>
-                                <p class="card-text">{{ item.description }}</p>
-                                <p class="card-meta">
-                                    {% if item.subscripters %}
-                                    <span><i class="ion ion-ios-notifications"></i> {{ item.subscripters }} 个订阅</span>
-                                    {% else %}
-                                    <span><i class="ion ion-ios-notifications"></i> 不公开订阅</span>
-                                    {% endif %}
-                                </p>
-                            </div>
+                            {% include _card.html param="item" variable-param=item %}
                             {% endfor %}
                         </div>
                     </div>
@@ -71,17 +51,7 @@
                     <div class="card-body">
                         <div class="row">
                             {% for item in site.data.games %}
-                            <div class="col-6 col-md-43 col-lg-3"><a href="https://www.youtube.com/channel/{{ item.channel }}"
-                                    rel="noopener nofollow" title="{{ item.name }}" target="_blank">{{ item.name }}</a>
-                                <p class="card-text">{{ item.description }}</p>
-                                <p class="card-meta">
-                                    {% if item.subscripters %}
-                                    <span><i class="ion ion-ios-notifications"></i> {{ item.subscripters }} 个订阅</span>
-                                    {% else %}
-                                    <span><i class="ion ion-ios-notifications"></i> 不公开订阅</span>
-                                    {% endif %}
-                                </p>
-                            </div>
+                            {% include _card.html param="item" variable-param=item %}
                             {% endfor %}
                         </div>
                     </div>
@@ -94,17 +64,7 @@
                     <div class="card-body">
                         <div class="row">
                             {% for item in site.data.healths %}
-                            <div class="col-6 col-md-43 col-lg-3"><a href="https://www.youtube.com/channel/{{ item.channel }}"
-                                    rel="noopener nofollow" title="{{ item.name }}" target="_blank">{{ item.name }}</a>
-                                <p class="card-text">{{ item.description }}</p>
-                                <p class="card-meta">
-                                    {% if item.subscripters %}
-                                    <span><i class="ion ion-ios-notifications"></i> {{ item.subscripters }} 个订阅</span>
-                                    {% else %}
-                                    <span><i class="ion ion-ios-notifications"></i> 不公开订阅</span>
-                                    {% endif %}
-                                </p>
-                            </div>
+                            {% include _card.html param="item" variable-param=item %}
                             {% endfor %}
                         </div>
                     </div>
@@ -116,24 +76,13 @@
                     </div>
                     <div class="card-body">
                         <div class="row">
-
                             {% for item in site.data.technologies %}
-                            <div class="col-6 col-md-43 col-lg-3"><a href="https://www.youtube.com/channel/{{ item.channel }}"
-                                    rel="noopener nofollow" title="{{ item.name }}" target="_blank">{{ item.name }}</a>
-                                <p class="card-text">{{ item.description }}</p>
-                                <p class="card-meta">
-                                    {% if item.subscripters %}
-                                    <span><i class="ion ion-ios-notifications"></i> {{ item.subscripters }} 个订阅</span>
-                                    {% else %}
-                                    <span><i class="ion ion-ios-notifications"></i> 不公开订阅</span>
-                                    {% endif %}
-                                </p>
-                            </div>
+                            {% include _card.html param="item" variable-param=item %}
                             {% endfor %}
                         </div>
                     </div>
                 </div>
-                {% include footer.html %}
+                {% include _footer.html %}
             </div>
         </div>
     </main>
