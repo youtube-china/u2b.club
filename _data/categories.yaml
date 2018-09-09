@@ -33,6 +33,11 @@
   icon: ion ion-ios-book
   color: ff9900
 
+- name: 人文生活
+  id: humanities
+  icon: ion ion-ios-partly-sunny
+  color: b29cff
+
 - name: 油管教程
   id: youtube
   icon: ion ion-logo-youtube

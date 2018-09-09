@@ -16,9 +16,9 @@
     <meta property="og:description" content="{{ site.description }}">
     <meta property="og:site_name" content="{{ site.title }}">
 
-    <meta name="description" content="{{ site.description }}" />
-    <meta name="keywords" content="{{ site.keywords }}" />
-    <title>{{ site.title }}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+    <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}" />
+    <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
     <link rel='stylesheet' id='repure-css' href='/static/css/repure.min.css' type='text/css' media='all' />
     <link rel='stylesheet' id='style-css' href='/static/css/style.css?v={{ site.version }}' type='text/css' media='all' />
     <link href="https://cdn.bootcss.com/ionicons/4.1.2/css/ionicons.min.css" rel="stylesheet">

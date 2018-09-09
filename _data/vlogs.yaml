@@ -1,10 +1,14 @@
-- name: 悟空的日常
-  id: UCii04BCvYIdQvshrdNDAcww
-  description: 热爱技巧分享，人活一世，技多不压身。折腾本是一个历练的过程。在折腾里寻找乐趣，探索道路，一起年轻，一起热泪盈眶。
-
 - name: 信誓蛋蛋
   id: UCdMbdrQAh0-zOWb2eenXE_A
   description: 信誓蛋蛋是两个法国人通过视频分享他们的生活，是非常火爆的一个生活类频道。
+
+- name: 蔡阿嘎Life
+  id: UCtcaZ5FUqaNXGX6xhpiGPQA
+  description: 蔡阿嘎第二個YouTube頻道：分享幕後花絮、生活隨拍小影片！
+
+- name: 小玉
+  id: UC24h-JBUHXT5HXIK_9cWOmQ
+  description: 哈囉~這裡是小玉的頻道 小玉會在這裡放上許多好玩有趣的影片~
 
 - name: yisu wang
   id: UCS5nkPfJ7a2U4CxtvZDZaww
