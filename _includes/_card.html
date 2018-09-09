@@ -2,6 +2,7 @@
         title="{{ channel.name }}" target="_blank">{{ channel.name }}</a>
     <p class="card-text">{{ channel.description }}</p>
     <p class="card-meta">
-        <iframe frameborder="0" height="25px" style="border: 0; width:135px; height:25px;" src="https://www.youtube.com/subscribe_embed?channelid={{ channel.id }}"></iframe>
+        <iframe class="lazyload" scrolling="no" frameborder="0" height="25px" style="border:none; overflow:hidden; width:135px; height:25px;"
+            data-src="https://www.youtube.com/subscribe_embed?channelid={{ channel.id }}"></iframe>
     </p>
 </div>
