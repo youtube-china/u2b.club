@@ -6,6 +6,14 @@
   id: UClrwomHUqXAXryOSOuJcEcA
   description: 我是韩三金在这里我希望把最好看最有意思的电影带给大家，谢谢你们的观看，你们真美，我会一直坚持下去的。
 
+- name: 看电影了没
+  id: UCZmyD8-UsaxaVL-Zx3KEQKw
+  description: 【看电影了没】官方频道。
+
+- name: 速食電影
+  id: UCZ5MMmvfyBh4A3GZAGlTc5w
+  description: 我是速食，歡迎來到我的個人頻道。我的視頻更多是針對影片觀感以及內在邏輯的討論，熱愛細節的朋友應該會喜歡。
+
 - name: 宇哥讲电影
   id: UCdRKafyb--geO9ySg6CbhYA
   description: 宇哥只做好看的电影，保留最精华部分，用诙谐幽默的解说娓娓道来，用心为大家奉献有笑料有态度的影视解说。
@@ -29,3 +37,7 @@
 - name: 阿斗归来了
   id: UCohOr1LlszMeXkSPCU9T2ng
   description: 分分鐘看完一部電影
+
+- name: 春哥说电影
+  id: UCsdSHceQ6of7DWElA-871qA
+  description: 信春哥，懂电影，几分钟用诙谐幽默的语言看完经典电影。

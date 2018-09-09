@@ -14,9 +14,24 @@
   color: 28a745
 
 - name: 技术分享
-  id: technology
+  id: tech
   icon: ion ion-ios-bulb
   color: 0ac7bb
+
+- name: 产品评测
+  id: evaluation
+  icon: ion ion-ios-microphone
+  color: cc181e
+
+- name: 音乐分享
+  id: music
+  icon: ion ion-ios-musical-notes
+  color: ff0063
+
+- name: 励志鸡汤
+  id: inspirational
+  icon: ion ion-ios-book
+  color: ff9900
 
 - name: 油管教程
   id: youtube
