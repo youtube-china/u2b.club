@@ -1,9 +1,7 @@
 - name: 呆妹儿小霸王
-  channel: UCb78cZEWLtwvJSmFXT3xzoA
+  id: UCb78cZEWLtwvJSmFXT3xzoA
   description: 一个非常可爱的瓜皮！！！！欢迎关注、点赞和订阅我的频道！！
-  subscripters: 32,074
 
 - name: LingDu零度-手游频道
-  channel: UCnCPtMD6QXjwV9J5QOSqSfw
+  id: UCnCPtMD6QXjwV9J5QOSqSfw
   description: 王者荣耀、绝地求生、迷你世界、像素游戏，你不能错过。
-  subscripters: 1,869

@@ -1,7 +1,7 @@
-<div class="col-6 col-md-43 col-lg-3"><a href="https://www.youtube.com/channel/{{ item.channel }}" rel="noopener nofollow"
-        title="{{ item.name }}" target="_blank">{{ item.name }}</a>
-    <p class="card-text">{{ item.description }}</p>
+<div class="col-6 col-md-43 col-lg-3"><a href="https://www.youtube.com/channel/{{ channel.id }}" rel="noopener nofollow"
+        title="{{ channel.name }}" target="_blank">{{ channel.name }}</a>
+    <p class="card-text">{{ channel.description }}</p>
     <p class="card-meta">
-        <iframe frameborder="0" height="25px" style="border: 0; width:135px; height:25px;" src="https://www.youtube.com/subscribe_embed?channelid={{ item.channel }}"></iframe>
+        <iframe frameborder="0" height="25px" style="border: 0; width:135px; height:25px;" src="https://www.youtube.com/subscribe_embed?channelid={{ channel.id }}"></iframe>
     </p>
 </div>

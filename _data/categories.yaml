@@ -1,0 +1,24 @@
+- name: 电影解说
+  id: movie-talk
+  icon: ion ion-ios-videocam
+  color: abcdef
+
+- name: 游戏频道
+  id: game
+  icon: ion ion-logo-game-controller-b
+  color: ffc107
+
+- name: 养生医护
+  id: health
+  icon: ion ion-ios-medkit
+  color: 28a745
+
+- name: 技术分享
+  id: technology
+  icon: ion ion-ios-bulb
+  color: 0ac7bb
+
+- name: 油管教程
+  id: youtube
+  icon: ion ion-logo-youtube
+  color: fc0d1b

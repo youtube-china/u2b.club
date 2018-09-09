@@ -24,8 +24,8 @@
                     </div>
                     <div class="card-body">
                         <div class="row">
-                            {% for item in site.data.features %}
-                            {% include _card.html param="item" variable-param=item %}
+                            {% for channel in site.data["features"] %}
+                            {% include _card.html param="channel" variable-param=channel %}
                             {% endfor %}
                         </div>
                     </div>
@@ -37,51 +37,27 @@
                     </div>
                     <div class="card-body">
                         <div class="row">
-                            {% for item in site.data.vlogs %}
-                            {% include _card.html param="item" variable-param=item %}
+                            {% for channel in site.data.vlogs %}
+                            {% include _card.html param="channel" variable-param=channel %}
                             {% endfor %}
                         </div>
                     </div>
                 </div>
 
-                <div class="card" id="game">
+                {% for item in site.data["categories"] %}
+                <div class="card" id="{{ item.id }}">
                     <div class="card-header">
-                        <i class="fi" aria-hidden="true"></i> 游戏频道
+                        <i class="{{ item.icon }}" style="color:#{{ item.color }}"></i> {{ item.name }}
                     </div>
                     <div class="card-body">
                         <div class="row">
-                            {% for item in site.data.games %}
-                            {% include _card.html param="item" variable-param=item %}
+                            {% for channel in site.data[item.id] %}
+                            {% include _card.html param="channel" variable-param=channel %}
                             {% endfor %}
                         </div>
                     </div>
                 </div>
-
-                <div class="card" id="health">
-                    <div class="card-header">
-                        <i class="fi" aria-hidden="true"></i> 养生医护
-                    </div>
-                    <div class="card-body">
-                        <div class="row">
-                            {% for item in site.data.healths %}
-                            {% include _card.html param="item" variable-param=item %}
-                            {% endfor %}
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card" id="technology">
-                    <div class="card-header">
-                        <i class="fi" aria-hidden="true"></i> 技术分享
-                    </div>
-                    <div class="card-body">
-                        <div class="row">
-                            {% for item in site.data.technologies %}
-                            {% include _card.html param="item" variable-param=item %}
-                            {% endfor %}
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
                 {% include _footer.html %}
             </div>
         </div>

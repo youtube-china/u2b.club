@@ -11,15 +11,10 @@
     </ul>
     <ul class="nav flex-column">
         <li class="label">其他</li>
-        <li id="menu-item-3" class="nav-item ui-framework menu-item menu-item-type-custom menu-item-object-custom menu-item-10"><a
-                href="#game">
-                <i class="ion ion-logo-game-controller-b" style="color:#ffc107;"></i> 游戏频道
+        {% for item in site.data["categories"] %}
+        <li class="nav-item ui-framework menu-item menu-item-type-custom menu-item-object-custom menu-item-10"><a href="#{{ item.id }}">
+                <i class="{{ item.icon }}" style="color:#{{ item.color }}"></i> {{ item.name }}
             </a></li>
-        <li id="menu-item-4" class="nav-item frontend-framework menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a
-                href="#health"><i class="ion ion-ios-medkit" style="color: #28a745;"></i> 养生医护</a></li>
-        <li id="menu-item-5" class="nav-item icon menu-item menu-item-type-custom menu-item-object-custom menu-item-12"><a
-                href="#youtube"><i class="ion ion-logo-youtube" style="color:#fc0d1b;"></i> 油管教程</a></li>
-        <li id="menu-item-6" class="nav-item icon menu-item menu-item-type-custom menu-item-object-custom menu-item-12"><a
-                href="#technology"><i class="ion ion-ios-bulb" style="color:#0ac7bb;"></i> 技术分享</a></li>
+        {% endfor %}
     </ul>
 </nav>

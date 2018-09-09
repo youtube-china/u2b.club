@@ -5,6 +5,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 keywords: youtube 导航, youtuber 推荐, 中文 youtube 频道, 中文 youtuber, youtube 开箱, Youtube 运营, 油管频道
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://u2b.club" # the base hostname & protocol for your site, e.g. http://example.com
+version: 0.1.2
 
 # Build settings
 markdown: kramdown
