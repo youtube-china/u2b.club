@@ -1,0 +1,3 @@
+---
+layout: nav_home
+---

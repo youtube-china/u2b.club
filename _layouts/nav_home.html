@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zh-CN">
+{% include head.html %}
+
+<body class="home blog">
+    {% include header.html %}
+    <main class="main-content">
+        {% include nav.html %}
+        <div id="content" class="content-wrapper">
+            <div class="container-fluid container-no-gutters">
+                <div class="jumbotron mt-3 text-center alert fade show" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <img height="160" src="static/img/lighthouse.png">
+                    <p class="lead">不知道看什么？试试手气！</p>
+                    <p>
+                        <a id="randomLink" class="btn btn-secondary btn-lg" href="javascript:;" role="button" title="试试手气">吃块糖果!</a>
+                    </p>
+                </div>
+                <div class="card" id="featured">
+                    <div class="card-header">
+                        <i class="fi" aria-hidden="true"></i> 精选
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            {% for item in site.data.features %}
+                            <div class="col-6 col-md-43 col-lg-3"><a href="https://www.youtube.com/channel/{{ item.channel }}"
+                                    rel="noopener nofollow" title="{{ item.name }}" target="_blank">{{ item.name }}</a>
+                                <p class="card-text">{{ item.description }}</p>
+                                <p class="card-meta">
+                                    {% if item.subscripters %}
+                                    <span><i class="ion ion-ios-notifications"></i> {{ item.subscripters }} 个订阅</span>
+                                    {% else %}
+                                    <span><i class="ion ion-ios-notifications"></i> 不公开订阅</span>
+                                    {% endif %}
+                                </p>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id="vlog">
+                    <div class="card-header">
+                        <i class="fi" aria-hidden="true"></i> VLOG
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            {% for item in site.data.vlogs %}
+                            <div class="col-6 col-md-43 col-lg-3"><a href="https://www.youtube.com/channel/{{ item.channel }}"
+                                    rel="noopener nofollow" title="{{ item.name }}" target="_blank">{{ item.name }}</a>
+                                <p class="card-text">{{ item.description }}</p>
+                                <p class="card-meta">
+                                    {% if item.subscripters %}
+                                    <span><i class="ion ion-ios-notifications"></i> {{ item.subscripters }} 个订阅</span>
+                                    {% else %}
+                                    <span><i class="ion ion-ios-notifications"></i> 不公开订阅</span>
+                                    {% endif %}
+                                </p>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id="game">
+                    <div class="card-header">
+                        <i class="fi" aria-hidden="true"></i> 游戏频道
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            {% for item in site.data.games %}
+                            <div class="col-6 col-md-43 col-lg-3"><a href="https://www.youtube.com/channel/{{ item.channel }}"
+                                    rel="noopener nofollow" title="{{ item.name }}" target="_blank">{{ item.name }}</a>
+                                <p class="card-text">{{ item.description }}</p>
+                                <p class="card-meta">
+                                    {% if item.subscripters %}
+                                    <span><i class="ion ion-ios-notifications"></i> {{ item.subscripters }} 个订阅</span>
+                                    {% else %}
+                                    <span><i class="ion ion-ios-notifications"></i> 不公开订阅</span>
+                                    {% endif %}
+                                </p>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id="health">
+                    <div class="card-header">
+                        <i class="fi" aria-hidden="true"></i> 养生医护
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            {% for item in site.data.healths %}
+                            <div class="col-6 col-md-43 col-lg-3"><a href="https://www.youtube.com/channel/{{ item.channel }}"
+                                    rel="noopener nofollow" title="{{ item.name }}" target="_blank">{{ item.name }}</a>
+                                <p class="card-text">{{ item.description }}</p>
+                                <p class="card-meta">
+                                    {% if item.subscripters %}
+                                    <span><i class="ion ion-ios-notifications"></i> {{ item.subscripters }} 个订阅</span>
+                                    {% else %}
+                                    <span><i class="ion ion-ios-notifications"></i> 不公开订阅</span>
+                                    {% endif %}
+                                </p>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id="technology">
+                    <div class="card-header">
+                        <i class="fi" aria-hidden="true"></i> 技术分享
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+
+                            {% for item in site.data.technologies %}
+                            <div class="col-6 col-md-43 col-lg-3"><a href="https://www.youtube.com/channel/{{ item.channel }}"
+                                    rel="noopener nofollow" title="{{ item.name }}" target="_blank">{{ item.name }}</a>
+                                <p class="card-text">{{ item.description }}</p>
+                                <p class="card-meta">
+                                    {% if item.subscripters %}
+                                    <span><i class="ion ion-ios-notifications"></i> {{ item.subscripters }} 个订阅</span>
+                                    {% else %}
+                                    <span><i class="ion ion-ios-notifications"></i> 不公开订阅</span>
+                                    {% endif %}
+                                </p>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                {% include footer.html %}
+            </div>
+        </div>
+    </main>
+    <script type='text/javascript' src='static/js/bootstrap.min.js'></script>
+    <script type='text/javascript' src='static/js/jquery/jquery.hideseek.min.js'></script>
+    <script type='text/javascript' src='static/js/scripts.min.js'></script>
+</body>
+
+</html>
