@@ -8,7 +8,7 @@
   icon: ion ion-logo-game-controller-b
   color: ffc107
 
-- name: 养生医护
+- name: 健康养生
   id: health
   icon: ion ion-ios-medkit
   color: 28a745
