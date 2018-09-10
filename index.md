@@ -1,3 +1,3 @@
 ---
-layout: nav_home
+layout: channel_nav
 ---
